@@ -1,0 +1,16 @@
+h1 {
+    color: hotpink !important;
+  }
+  h2 {
+    color: green;
+  }
+  p {
+    color: orange;
+  }
+  div {
+    color: blue;
+  }
+  .cls {
+    color: skyblue;
+    background-color: slategrey;
+  }
