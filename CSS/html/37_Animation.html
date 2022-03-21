@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 200px;
+        width: 200px;
+        background-color: grey;
+        animation: my-box 10s infinite;
+      }
+
+      @keyframes my-box {
+        0% {
+          background-color: grey;
+        }
+        20% {
+          background-color: green;
+        }
+        40% {
+          background-color: hotpink;
+        }
+        60% {
+          background-color: skyblue;
+        }
+        80% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+  </body>
+</html>
