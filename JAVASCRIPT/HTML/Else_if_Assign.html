@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            do {
+
+                var a = prompt("Enter 1st Number:")
+                a = Number(a);
+                var b = prompt("Enter 2nd Number:")
+                b = Number(b);
+                var ch = prompt("Enter Your Choice:\n1.Add\n2.Sub\n3.Mul\n4.Div\n5.Exit")
+
+
+                if (ch == 1) {
+                    var add = a + b;
+                    //    prompt("Addition Of 1st And 2nd Number Is: "+add)
+                    confirm("Addition Of 1st And 2nd Number Is: " + add)
+                    let c = prompt("If You Want To Continue Press Y/N")
+
+                    if (c ==y ) {
+                        let ch1 = prompt("Enter Your Choice:\n1.Adding a Number In Sum\n2.Adding Two Another Numbers.\n3.Exit")
+
+                        if (ch1 == 1) {
+                            let sum = add + b1;
+                            confirm(`Additon is ${sum}`);
+                        } else if (ch1 == 2) {
+                            var a1 = prompt("Enter 1st Number:")
+                            a1 = Number(a);
+                            var b1 = prompt("Enter 2nd Number:")
+                            b1 = Number(b);
+                            
+                            let sum=a1+b1
+                            confirm(`Additon is ${sum}`);
+                            
+                        } else {
+                            confirm("Wrong Choice Entered")
+                        }
+
+                    } else if (c == N) {
+                        confirm("Thank You For Using Our System..")
+                    } else {
+                        confirm("You Have Entered Wrong Choice.")
+                    }
+                } else {
+                    confirm("You Have Entered Wrong Choice....")
+                }
+            } while (ch != 5)
+        </script>
+    </body>
+</html>
