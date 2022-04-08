@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-box {
+        border: 1px solid silver;
+        width: 195px;
+        height: 200px;
+        position: absolute;
+        /* margin: 0 auto; */
+        margin: 10% 50% 20% 40%;
+        
+      }
+
+      #box {
+        bottom: 0px;
+        position: absolute;
+      }
+      #sendbtn{
+          position: absolute;
+      }
+      #box input{
+          width: 85%;;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <div id="show-text"></div>
+      <div id="box"><input id="content" /> <button id="sendbtn">>>></button></div>
+    </div>
+    <script src="./3_jQuery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var chat = $("#content").val();
+          //   alert(text);
+          //   $("#show-text").text(chat);
+          var oldChat = $("#show-text").html();
+          chat = oldChat + "<br />" + chat;
+          $("#show-text").html(chat);
+          $("#content").val("");
+        });
+      });
+    </script>
+  </body>
+</html>
